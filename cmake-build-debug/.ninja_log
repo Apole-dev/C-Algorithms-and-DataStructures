@@ -1,0 +1,24 @@
+# ninja log v6
+3	134	7459491322960939	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+143	303	7459491917593708	Algorithm.exe	f17967d0156a428e
+4	142	7459491916199171	CMakeFiles/Algorithm.dir/Arrays/ArrayOperations.c.obj	201d890a2696b244
+5	150	7460310320326439	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+4	143	7460310740508282	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+17	144	7460310740649835	CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj	9598892c7679a7ab
+144	514	7460310741918179	Algorithm.exe	4042622811e6ae07
+5	146	7460316750359798	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+12	148	7460316750440227	CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj	9598892c7679a7ab
+148	307	7460316751794387	Algorithm.exe	4042622811e6ae07
+6	129	7460317015426326	CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj	9598892c7679a7ab
+130	291	7460317016665501	Algorithm.exe	4042622811e6ae07
+15	153	7460319187443769	CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj	9598892c7679a7ab
+7	174	7460319187360137	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+174	333	7460319189034746	Algorithm.exe	4042622811e6ae07
+5	136	7460319339229399	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+137	329	7460319340557864	Algorithm.exe	4042622811e6ae07
+4	151	7460325936909347	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+152	325	7460325938383495	Algorithm.exe	4042622811e6ae07
+6	133	7460326612890682	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+134	296	7460326614174527	Algorithm.exe	4042622811e6ae07
+5	138	7460326756402976	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
+5	136	7460326836679089	CMakeFiles/Algorithm.dir/main.c.obj	d0e8ae69dff73cca
