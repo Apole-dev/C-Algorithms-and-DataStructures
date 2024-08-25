@@ -55,17 +55,17 @@ build CMakeFiles/Algorithm.dir/main.c.obj: C_COMPILER__Algorithm_unscanned_Debug
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir
 
-build CMakeFiles/Algorithm.dir/Arrays/ArrayOperations.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Arrays/ArrayOperations.c || cmake_object_order_depends_target_Algorithm
-  DEP_FILE = CMakeFiles\Algorithm.dir\Arrays\ArrayOperations.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\Algorithm.dir
-  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Arrays
-
 build CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/LinkedList/LinkedList.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\LinkedList\LinkedList.c.obj.d
   FLAGS = -g -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\LinkedList
+
+build CMakeFiles/Algorithm.dir/Stack/Stack.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Stack/Stack.c || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Stack\Stack.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Stack
 
 
 # =============================================================================
@@ -75,7 +75,7 @@ build CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj: C_COMPILER__Algorith
 #############################################
 # Link the executable Algorithm.exe
 
-build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/Arrays/ArrayOperations.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj
+build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj CMakeFiles/Algorithm.dir/Stack/Stack.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Algorithm.dir
