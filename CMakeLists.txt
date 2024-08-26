@@ -7,4 +7,6 @@ add_executable(Algorithm main.c
         LinkedList/LinkedList.c
         LinkedList/LinkedList.h
         Stack/Stack.c
-        Stack/Stack.h)
+        Stack/Stack.h
+        Queue/Queue.c
+        Queue/Queue.h)
