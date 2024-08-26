@@ -9,4 +9,6 @@ add_executable(Algorithm main.c
         Stack/Stack.c
         Stack/Stack.h
         Queue/Queue.c
-        Queue/Queue.h)
+        Queue/Queue.h
+        HashMap/HashMap.c
+        HashMap/HashMap.h)
