@@ -11,4 +11,9 @@ add_executable(Algorithm main.c
         Queue/Queue.c
         Queue/Queue.h
         HashMap/HashMap.c
-        HashMap/HashMap.h)
+        HashMap/HashMap.h
+        "Sorting Algorithms/Bubble Sort/BubbleSort.c"
+        "Sorting Algorithms/Bubble Sort/BubbleSort.h"
+        "Sorting Algorithms/Merge Sort/MergeSort.c"
+        "Sorting Algorithms/Merge Sort/MergeSort.h"
+)

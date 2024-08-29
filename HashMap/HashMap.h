@@ -3,6 +3,7 @@
 //
 #ifndef HASHMAP_H
 #define HASHMAP_H
+
 #define HASHMAP_SIZE 26
 
 typedef struct {
@@ -14,4 +15,6 @@ extern HashMap* hashMap[HASHMAP_SIZE];
 HashMap* CreateHashMap();
 void InsertElement(int value);
 void WriteFrequency();
+
+
 #endif //HASHMAP_H
