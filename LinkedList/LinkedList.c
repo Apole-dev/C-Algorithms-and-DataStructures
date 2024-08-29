@@ -44,10 +44,8 @@ struct Node* CreateNode(int value) {
  */
 struct Node* AssignFirstElement(struct Node* headNode, int value) {
     struct Node* newNode = CreateNode(value);
-    struct Node* temp = headNode;
-    headNode = newNode;
-    headNode->next = temp->next;
-    return headNode;
+    newNode->next = headNode;  // headNode'u yeni node'un next'ine atıyoruz
+    return newNode;  // Yeni head, yeni oluşturulan node olmalı
 }
 
 /**
@@ -77,10 +75,15 @@ struct Node* DeleteFirstElement(struct Node* headNode) {
  * @throws None
  */
 struct Node* DeleteLastElement(struct Node* headNode) {
-    struct Node* temp = headNode;
+    if (headNode == NULL) return NULL;
+    if (headNode->next == NULL) {
+        free(headNode);
+        return NULL;
+    }
 
+    struct Node* temp = headNode;
     while (temp->next->next != NULL) {
-        temp = temp->next; //element before last
+        temp = temp->next;
     }
 
     free(temp->next);
@@ -88,7 +91,6 @@ struct Node* DeleteLastElement(struct Node* headNode) {
 
     return headNode;
 }
-
 /**
  * Adds a new node with the given value to the end of the linked list.
  *
@@ -101,34 +103,39 @@ struct Node* DeleteLastElement(struct Node* headNode) {
  */
 struct Node* AddLastElement(struct Node* headNode, int value) {
     struct Node* newNode = CreateNode(value);
-    struct Node* temp = headNode;
 
-    while (temp->next->next != NULL) {
+    if (headNode == NULL) {
+        return newNode;
+    }
+
+    struct Node* temp = headNode;
+    while (temp->next != NULL) {
         temp = temp->next;
     }
 
     temp->next = newNode;
-    newNode->next = NULL;
-
     return headNode;
 }
 
+
 /**
- * Changes the data of the last node in a singly linked list.
+ * Changes the data of the last element of a linked list.
  *
  * @param headNode The head of the linked list.
- * @param value The new data to be assigned to the last node.
+ * @param value The new data to be assigned to the last element.
  *
  * @return The head of the modified linked list.
  *
  * @throws None
  */
 struct Node* ChangeLastElement(struct Node* headNode, int value) {
+    if (headNode == NULL) return NULL;
+
     struct Node* temp = headNode;
-    while (temp->next->next != NULL) {
+    while (temp->next != NULL) {
         temp = temp->next;
     }
-    temp->data = value;
+    temp->data = value;  // Son elemanın data'sı değiştirildi
     return headNode;
 }
 
@@ -204,8 +211,8 @@ struct Node* ChangeElementByIndex(struct Node* headNode, int index, int value) {
 int FindIndex(struct Node* headNode, int value) {
     struct Node* temp = headNode;
     int index = 0;
-    while (temp->next == NULL) {
-        if (temp->data == value)return index;
+    while (temp != NULL) {
+        if (temp->data == value) return index;
         temp = temp->next;
         index++;
     }
@@ -265,13 +272,20 @@ struct Node* DeleteElementByIndex(struct Node* headNode, int index) {
  */
 struct Node* InsertElementAtIndex(struct Node *headNode, int index, int value) {
     struct Node* newNode = CreateNode(value);
-    struct Node* temp = headNode;
 
-    for (int i = 1; i < index; ++i) {
+    if (index == 0) {
+        newNode->next = headNode;
+        return newNode;
+    }
+
+    struct Node* temp = headNode;
+    for (int i = 0; i < index - 1 && temp != NULL; ++i) {
         temp = temp->next;
     }
+
+    if (temp == NULL) return headNode;
+    newNode->next = temp->next;
     temp->next = newNode;
-    newNode->next = temp->next->next;
 
     return headNode;
 }

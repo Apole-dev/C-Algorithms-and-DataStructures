@@ -1,5 +1,6 @@
 //
 // Created by Eren on 8/26/2024.
+// Linear Hashing not implemented
 //
 #include <stdio.h>
 #include <stdlib.h>

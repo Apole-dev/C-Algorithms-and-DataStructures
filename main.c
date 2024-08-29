@@ -1,17 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
 
-#include "LinkedList/LinkedList.h"
-#include "Stack/Stack.h"
-#include "Queue/Queue.h"
-#include "HashMap/HashMap.h"
+#include "Sorting Algorithms/Bubble Sort/BubbleSort.h"
+#include "Sorting Algorithms/Insertion Sort/InsertionSort.h"
+#include "Sorting Algorithms/Quick Sort/QuickSort.h"
+
 int main(void) {
-    int arr[] = {3 ,3 ,1 ,4 ,5 ,2 ,1 ,3};
+    int arr[] = {3  ,1 ,4 ,5 ,2,432,9,6,13};
 
-    for (int i = 0; i < 8; ++i) {
-        InsertElement(arr[i]);
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    QuickSort(arr,0,n-1);
+
+    for (int i = 0; i < n; ++i) {
+        printf("%d ", arr[i]);
     }
-
-    WriteFrequency();
     return 0;
 }
