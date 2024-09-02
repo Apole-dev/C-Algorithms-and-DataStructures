@@ -20,4 +20,8 @@ add_executable(Algorithm main.c
         "Sorting Algorithms/Insertion Sort/InsertionSort.h"
         "Sorting Algorithms/Quick Sort/QuickSort.c"
         "Sorting Algorithms/Quick Sort/QuickSort.h"
+        "Sorting Algorithms/Selection Sort/SelectionSort.c"
+        "Sorting Algorithms/Selection Sort/SelectionSort.h"
+        Heaps/Heap.c
+        Heaps/Heap.h
 )

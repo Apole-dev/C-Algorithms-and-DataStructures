@@ -103,6 +103,18 @@ build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj: C_
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Quick_Sort
 
+build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Selection_Sort/SelectionSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Selection$ Sort/SelectionSort.c || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Selection_Sort\SelectionSort.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Selection_Sort
+
+build CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Heaps/Heap.c || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Heaps\Heap.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Heaps
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target Algorithm
@@ -111,7 +123,7 @@ build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj: C_
 #############################################
 # Link the executable Algorithm.exe
 
-build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj CMakeFiles/Algorithm.dir/Stack/Stack.c.obj CMakeFiles/Algorithm.dir/Queue/Queue.c.obj CMakeFiles/Algorithm.dir/HashMap/HashMap.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Merge_Sort/MergeSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Insertion_Sort/InsertionSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj
+build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj CMakeFiles/Algorithm.dir/Stack/Stack.c.obj CMakeFiles/Algorithm.dir/Queue/Queue.c.obj CMakeFiles/Algorithm.dir/HashMap/HashMap.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Merge_Sort/MergeSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Insertion_Sort/InsertionSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Selection_Sort/SelectionSort.c.obj CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Algorithm.dir
