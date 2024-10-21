@@ -24,4 +24,6 @@ add_executable(Algorithm main.c
         "Sorting Algorithms/Selection Sort/SelectionSort.h"
         Heaps/Heap.c
         Heaps/Heap.h
+        Trees/Tree.c
+        Trees/Tree.h
 )

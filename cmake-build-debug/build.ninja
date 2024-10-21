@@ -51,69 +51,81 @@ build cmake_object_order_depends_target_Algorithm: phony || CMakeFiles/Algorithm
 
 build CMakeFiles/Algorithm.dir/main.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/main.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\main.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir
 
 build CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/LinkedList/LinkedList.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\LinkedList\LinkedList.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\LinkedList
 
 build CMakeFiles/Algorithm.dir/Stack/Stack.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Stack/Stack.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Stack\Stack.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Stack
 
 build CMakeFiles/Algorithm.dir/Queue/Queue.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Queue/Queue.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Queue\Queue.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Queue
 
 build CMakeFiles/Algorithm.dir/HashMap/HashMap.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/HashMap/HashMap.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\HashMap\HashMap.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\HashMap
 
 build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Bubble$ Sort/BubbleSort.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Bubble_Sort\BubbleSort.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Bubble_Sort
 
 build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Merge_Sort/MergeSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Merge$ Sort/MergeSort.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Merge_Sort\MergeSort.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Merge_Sort
 
 build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Insertion_Sort/InsertionSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Insertion$ Sort/InsertionSort.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Insertion_Sort\InsertionSort.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Insertion_Sort
 
 build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Quick$ Sort/QuickSort.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Quick_Sort\QuickSort.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Quick_Sort
 
 build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Selection_Sort/SelectionSort.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Selection$ Sort/SelectionSort.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Selection_Sort\SelectionSort.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Selection_Sort
 
 build CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Heaps/Heap.c || cmake_object_order_depends_target_Algorithm
   DEP_FILE = CMakeFiles\Algorithm.dir\Heaps\Heap.c.obj.d
-  FLAGS = -g -fdiagnostics-color=always
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
   OBJECT_DIR = CMakeFiles\Algorithm.dir
   OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Heaps
+
+build CMakeFiles/Algorithm.dir/Trees/Tree.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Trees/Tree.c || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Trees\Tree.c.obj.d
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Trees
+
+build CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSortTest.c.obj: C_COMPILER__Algorithm_unscanned_Debug C$:/Users/Eren/CLionProjects/Algorithm/Sorting$ Algorithms/Bubble$ Sort/BubbleSortTest.c || cmake_object_order_depends_target_Algorithm
+  DEP_FILE = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Bubble_Sort\BubbleSortTest.c.obj.d
+  FLAGS = -g -std=gnu17 -fdiagnostics-color=always
+  OBJECT_DIR = CMakeFiles\Algorithm.dir
+  OBJECT_FILE_DIR = CMakeFiles\Algorithm.dir\Sorting_Algorithms\Bubble_Sort
 
 
 # =============================================================================
@@ -123,7 +135,7 @@ build CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj: C_COMPILER__Algorithm_unscanned
 #############################################
 # Link the executable Algorithm.exe
 
-build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj CMakeFiles/Algorithm.dir/Stack/Stack.c.obj CMakeFiles/Algorithm.dir/Queue/Queue.c.obj CMakeFiles/Algorithm.dir/HashMap/HashMap.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Merge_Sort/MergeSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Insertion_Sort/InsertionSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Selection_Sort/SelectionSort.c.obj CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj
+build Algorithm.exe: C_EXECUTABLE_LINKER__Algorithm_Debug CMakeFiles/Algorithm.dir/main.c.obj CMakeFiles/Algorithm.dir/LinkedList/LinkedList.c.obj CMakeFiles/Algorithm.dir/Stack/Stack.c.obj CMakeFiles/Algorithm.dir/Queue/Queue.c.obj CMakeFiles/Algorithm.dir/HashMap/HashMap.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Merge_Sort/MergeSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Insertion_Sort/InsertionSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Quick_Sort/QuickSort.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Selection_Sort/SelectionSort.c.obj CMakeFiles/Algorithm.dir/Heaps/Heap.c.obj CMakeFiles/Algorithm.dir/Trees/Tree.c.obj CMakeFiles/Algorithm.dir/Sorting_Algorithms/Bubble_Sort/BubbleSortTest.c.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\Algorithm.dir

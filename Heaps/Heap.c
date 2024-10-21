@@ -21,7 +21,7 @@ void Heapify(int array[], int len, int index) {
         array[largest] = temp;
         Heapify(array, len, largest);
     }
-};
+}
 
 void InsertHeapElement(int array[], int element) {
     if(heapLength == 0 ) {
@@ -40,12 +40,12 @@ void InsertHeapElement(int array[], int element) {
 bool DeleteHeapElement(int array[], int element) {
     int i;
     for (i = 0; i < heapLength; ++i) {
-        if(array[i] == element) break; // element founded
+        if(array[i] == element) break; // element index founded
     }
     if(i == heapLength) return false;
 
     array[i] = array[heapLength-1];
     heapLength--;
-    Heapify(array, heapLength, i);
+    Heapify(array, heapLength, i); //re-heapify
     return true;
 }

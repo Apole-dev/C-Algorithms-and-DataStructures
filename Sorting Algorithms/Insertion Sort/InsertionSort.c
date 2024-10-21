@@ -56,6 +56,10 @@ void InsertionSort(int array[], int len) {
             array[previousStep+1] = array[previousStep];
             previousStep--;
         }
+
         array[previousStep+1] = currentValue;
     }
 }
+
+
+
