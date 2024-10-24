@@ -1,25 +1,34 @@
 //
-// Created by Eren on 9/5/2024.
+// Created by Eren on 10/24/2024.
 //
 
-#ifndef TREE_H
-#define TREE_H
+#ifndef ALGORITHM_TREE_H
+#define ALGORITHM_TREE_H
 
 #include <stdbool.h>
 
-// TreeNode yapısının tam tanımı burada yapılmalıdır
-typedef struct TreeNode {
-    int value;
-    int leafCount; // Bu doğru isim olabilir
-    struct TreeNode* left;
-    struct TreeNode* right;
-    struct TreeNode* parent;
-} TreeNode;
+typedef struct {
+    int data;
+    struct Node* leftSide;
+    struct Node* rightSide;
+}Node;
 
-// Fonksiyon prototipleri
-TreeNode* InitTreeNode(int value);
-TreeNode* FindElement(TreeNode* rootNode, int value);
-bool InsertElement(TreeNode* rootNode, int value);
-bool DeleteElement(TreeNode* rootNode, int value);
+Node* CreateNodeTree(int value);
+Node* AddElementToLeftNode(Node* newNode , int value);
+Node* AddElementToRightNode(Node* newNode, int value );
+void InOrderedTraversal(Node* rootNode);
+void PreOrderedTraversal(Node* rootNode);
 
-#endif // TREE_H
+
+
+
+
+
+
+
+
+
+
+
+
+#endif //ALGORITHM_TREE_H

@@ -1,53 +1,61 @@
 //
-// Created by Eren on 9/5/2024.
+// Created by Eren on 10/24/2024.
 //
 
+#include "Tree.h"
 
+
+#include <malloc.h>
 #include <stdbool.h>
 #include <stdio.h>
-#include <stdlib.h>
 
-typedef struct TreeNode{
-    int value;
-    int level;
-    short leafCunt;
-    struct TreeNode* parent;
-    struct TreeNode* left;
-    struct TreeNode* right;
-}TreeNode;
 
-TreeNode* InitTreeNode(int value){
-    TreeNode* rootNode = (TreeNode*)malloc(sizeof(TreeNode));
-    rootNode->value = value;
-    rootNode->leafCunt = 0;
-    rootNode->left = rootNode;
-    rootNode->right = rootNode;
-    rootNode->parent = NULL;
-    return rootNode;
+Node* CreateNodeTree(int element){
+    Node* newNode = malloc(sizeof(Node));
+    newNode->data = element;
+    newNode->leftSide = NULL;
+    newNode->rightSide = NULL;
+    return newNode;
+}
+
+Node* AddElementToLeftNode(Node* newNode , int value){
+    if(newNode->leftSide == NULL) {
+        Node* node =  CreateNodeTree(value);
+        node->data = value;
+        newNode->leftSide = (struct Node *) node;
+        return node;
+    }
+    return NULL;
+}
+
+Node* AddElementToRightNode(Node* newNode, int value ){
+    if(newNode->rightSide == NULL) {
+        Node* node =  CreateNodeTree(value);
+        node->data = value;
+        newNode->rightSide = (struct Node *) node;
+        return node;
+    }
+    return NULL;
 }
 
 
-TreeNode* FindElement(TreeNode* rootNode, int value) {
-    if(rootNode == NULL) return (TreeNode *) -1;
 
-    if(rootNode->value == value) return rootNode;
-    if(rootNode->left != NULL) FindElement(rootNode->left, value);
-    if (rootNode->right != NULL) FindElement(rootNode->right,value);
-
-};
-bool InsertElement( TreeNode* rootNode, int value) {
-    if(rootNode == NULL) return false;
-
-
-    if(FindElement(rootNode,value)) {
-        printf("This element do not exists\n");
-        return false;
+void InOrderedTraversal(Node* rootNode){
+    if(rootNode == NULL) {
+        return;
     }
+    InOrderedTraversal((Node *) rootNode->leftSide);
+    printf("%d\n", rootNode->data);
+    InOrderedTraversal((Node *) rootNode->rightSide);
 
-    TreeNode* newNode = InitTreeNode(value);
-    if(rootNode->left != NULL) {
-        newNode->parent = rootNode;
-        rootNode->left->right;
+}
+
+void PreOrderedTraversal(Node* rootNode){
+    if(rootNode == NULL ){
+        printf("Node is empty" );
+        return;
     }
-};
-bool DeleteElement(TreeNode* rootNode, int value);
+    printf("%d", rootNode->data );
+    PreOrderedTraversal((Node *) rootNode->leftSide);
+    PreOrderedTraversal((Node *) rootNode->rightSide);
+}
